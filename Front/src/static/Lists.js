@@ -1,9 +1,8 @@
-const PROPERTY_TYPES = [
-  { value: "apartment", label: "Apartment" },
-  { value: "house", label: "House" },
-  { value: "studio", label: "Studio" },
-  { value: "land", label: "Land" },
-  { value: "office", label: "Office" },
+const ADS_TYPES = [
+  { value: "Rent", label: "Rent" },
+  { value: "Buy", label: "Buy" },
+  { value: "Exchange", label: "Exchange" },
+  { value: "Donation", label: "Donation" },
 ];
 
 const AMENITIES = [
@@ -15,17 +14,4 @@ const AMENITIES = [
   "Furnished",
 ];
 
-const CITY_OPTIONS = [
-  "Athens",
-  "Thessaloniki",
-  "Patras",
-  "Heraklion",
-  "Larissa",
-  "Volos",
-  "Ioannina",
-  "Chania",
-  "Rhodes",
-  "Piraeus",
-];
-
-export { PROPERTY_TYPES, AMENITIES, CITY_OPTIONS };
+export { ADS_TYPES, AMENITIES };
