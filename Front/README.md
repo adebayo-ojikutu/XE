@@ -1,16 +1,57 @@
-# React + Vite
+# Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for the XE property ads challenge.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19 + Vite 7
+- Tailwind CSS 4
+- React Hook Form + Zod
+- Axios
+- Cypress (component + e2e)
 
-## React Compiler
+## Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+
+- npm 9+
+- Backend running at `http://localhost:5000` (or your configured API URL)
 
-## Expanding the ESLint configuration
+## Environment Variables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create `Front/.env`:
+
+```bash
+VITE_PORT=http://localhost:5000
+```
+
+This is used as Axios `baseURL` in `Front/src/Apis/api.js`.
+
+## Run
+
+```bash
+cd Front
+npm install
+npm run dev
+```
+
+App runs at `http://localhost:5173`.
+
+## Scripts
+
+- `npm run dev` - run local dev server
+- `npm run build` - create production build in `dist/`
+- `npm run preview` - preview production build
+- `npm run lint` - run ESLint
+- `npm run cy:open` - open Cypress UI
+- `npm run cy:run:component` - run component tests
+- `npm run cy:run:api` - run API e2e test (`cypress/e2e/api/backend.cy.js`)
+
+## Main Pages/Modules
+
+- `Front/src/pages/PropertyAdsPage.jsx` - property ads table and actions
+- `Front/src/Components/Modal/PropertyAd.jsx` - create/edit form modal
+- `Front/src/Apis/` - API clients
+
+## Notes
+
+- Area autocomplete starts after 3 characters and requires selecting a suggestion to set `placeId`.

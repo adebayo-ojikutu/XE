@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+Front/node_modules/
+Back/node_modules/
+
+# Build output
+Front/dist/
+Back/dist/
+
+# Environment files
+.env
+.env.*
+Front/.env
+Front/.env.*
+Back/.env
+Back/.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test artifacts
+Front/cypress/videos/
+Front/cypress/screenshots/
+Front/.nyc_output/
+coverage/

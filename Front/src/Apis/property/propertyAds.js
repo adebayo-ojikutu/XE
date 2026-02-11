@@ -9,5 +9,5 @@ export const updateProperty = async function (payload, id) {
   return api.put(`/properties/update/${id}`, payload); // Use the base URL from the instance
 };
 export const deleteProperty = async function (id) {
-  return api.delete(`/properties/delete/${id}`, payload); // Use the base URL from the instance
+  return api.delete(`/properties/delete/${id}`); // Use the base URL from the instance
 };
