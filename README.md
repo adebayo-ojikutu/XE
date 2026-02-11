@@ -72,14 +72,6 @@ npm run dev
 
 Vite runs at `http://localhost:5173`.
 
-## Environment Variables
-
-Frontend (`Front/.env`):
-
-```bash
-VITE_PORT=http://localhost:5000
-```
-
 
 ## Scripts
 
@@ -119,5 +111,16 @@ Bonus items met:
 - Mobile-friendly/responsive form
 - Persistence in database
 - Page showing persisted ads
+
+
+## screenshots
+- ads data page
+  <img width="1143" height="565" alt="image" src="https://github.com/user-attachments/assets/ba7f7405-7c01-4bd4-80ef-3874b78e2f44" />
+
+- form modal
+  
+  <img width="720" height="705" alt="image" src="https://github.com/user-attachments/assets/b06dab12-31df-4f13-8533-33159395fcb1" />
+
+
 
 
