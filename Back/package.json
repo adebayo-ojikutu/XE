@@ -4,7 +4,7 @@
   "description": "Full stack app",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": ">=18 <21"
   },
   "scripts": {
     "start": "node index.js",
