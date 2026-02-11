@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm --prefix Back run dev\" \"npm --prefix Front run dev\""
+    "dev": "concurrently \"npm --prefix Back run dev\" \"npm --prefix Front run dev\"",
+    "install:all": "cd Back && npm install && cd .. && cd Front && npm install --ignore-scripts",
+    "postinstall": "npm run install:all"
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
